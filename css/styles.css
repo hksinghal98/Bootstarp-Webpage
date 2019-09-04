@@ -1,0 +1,194 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+#moreInfo{
+   background: black;
+   padding-bottom: 20px;
+}
+#moreInfo .col-sm-6{
+   padding-top: 20px;
+}
+
+.bg{
+   background: url("../images/bg.jpg") no-repeat;
+   background-size: cover;
+   width: 100%;
+}
+/* --------------------------------------
+   Features
+   -------------------------------------- */
+
+#features {
+   text-align: center;
+   padding-top: 20px;
+}
+
+#features img {
+   margin: 0 0 20px;
+}
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+footer{
+   background: #333;
+   color: #eee;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+footer li{
+      list-style: none;
+   }
+
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#searchInput{
+   width: 100px;
+} 
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel{
+   margin-top: 60px;
+   padding-top: 20px;
+}
+
+#myCarousel .item{
+   height: 400px;
+}
+#slide1{
+   background: url("../images/l1.jpg") top center no-repeat;
+}
+#slide2{
+   background: url("../images/l1.jpg") top center no-repeat;
+}
+#slide3{
+   background: url("../images/l1.jpg") top center no-repeat;
+}
+
+.item h4{
+   font-size: 30px;
+}
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+.listgroup a{
+   color: inherit;
+}
+
+.listgroup a:hover{
+   background-color: skyblue;
+}
+
+.listgroup h4{
+   line-height: 10px;
+}
+
+.listgroup li{
+   list-style: none;
+}
+
+/*......................................
+   Tab pane
+.....................................*/
+
+#tab1 iframe{
+   text-align: center;
+   padding-top: 20px;
+   border:0
+}
+
+#tab1 a{
+   margin-left:170px;
+}
+#tab1 p{
+   line-height: 10px;
+}
+
+#tab2 img {
+   margin-left: 50px;
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+
+#tab2 p{
+   text-align: justify;
+}
+
+.contact_dtls{
+   padding-top: 30px;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+   .item h4{
+      font-size: 10px;
+   }
+
+   #tab1 iframe{
+   text-align: center;
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+
+   #myCarousel .item {
+    height: 310px;
+   }
+
+   #slide1{
+   background: url("../images/m1.jpg") top center no-repeat;
+   }
+   #slide2{
+      background: url("../images/m2.jpg") top center no-repeat;
+   }
+   #slide3{
+      background: url("../images/m3.jpg") top center no-repeat;
+   }
+   .item h4{
+      font-size: 30px;
+      color: blue;
+   }
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   #slide1{
+      background: url("../images/l1.jpg") top center no-repeat;
+   }
+   #slide2{
+      background: url("../images/l2.jpg") top center no-repeat;
+   }
+   #slide3{
+      background: url("../images/l3.jpg") top center no-repeat;
+   }  
+   .item h4{
+      font-size: 50px;
+      color: red;
+   }
+}
